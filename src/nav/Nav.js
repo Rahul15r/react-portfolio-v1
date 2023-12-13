@@ -27,7 +27,7 @@ export default function Nav() {
   };
 
   const getPageTitle = () =>{
-    switch(location.pathname) {
+    switch (location.pathname) {
       case"/":
         return "ABOUT";
       case"/skills":
@@ -54,7 +54,7 @@ const renderNavLink = (to, imgSrc, altText, navClass) =>{
   const isCurrent = isCurrentPage(navClass);
   const linkClass = isCurrent ? "nav-link current" : "nav-link";
   return (
-    <Link to={to} className = {linkclass}>
+    <Link to={to} className = {linkClass}>
     <img src ={imgSrc} alt={altText}/>
     {isCurrent && <h1 className="page-title">{pageTitle}</h1>}
     </Link>
@@ -88,5 +88,5 @@ return(
       "nav-contact"
     )}
   </nav>
-)
+);
 }
