@@ -15,10 +15,10 @@ const App = () => {
   <Nav/>
   <Background/>
   <Routes>
-    <Route path="/" element={About} />
-    <Route path="skills" element={Skills} />
-    <Route path="/projects" element={Projects} />
-    <Route path="/contact" element={Contact} />
+    <Route path="/" element={<About />} />
+    <Route path="skills" element={<Skills/>} />
+    <Route path="/projects" element={< Projects/>} />
+    <Route path="/contact" element={<Contact/>} />
   </Routes>
   <PlayerStats />
   </Router>
